@@ -17,8 +17,8 @@ const Intro = ()=> {
 const Skills = () => {
 	return (
 		<div style={{textAlign: 'center'}}>
-			<h3>TECHNICAL SKILLS</h3>
-			<div className='well'>
+			<h3 className="well">TECHNICAL SKILLS</h3>
+			<div>
 				<p>Proficient: JavaScript, Angular, Node.js, Express, Git, HTML5, CSS3, Sass, Postgres/Sequelize, Bootstrap</p>
 				<p>Familiar: ES2015, Karma, Gulp, Yeoman, Mocha, Chai, Passport, Socket.io, C++, Python,   React, Functional Javascript programming, Docker</p>
 			</div>
@@ -28,40 +28,62 @@ const Skills = () => {
 
 const Projects = () => {
 	return (
-		<div style={{textAlign: 'center'}}>
-			<h3>PROJECTS</h3>
-			<p className="well col-lg-4 col-md-4 col-sm-4"><a href="https://thesynth.herokuapp.com">The Synth</a></p>
-			<p className="well col-lg-4 col-md-4 col-sm-4"><a href="https://moseisleymarketplace.herokuapp.com">Mos Eisley MarketPlace</a></p>
-			<p className="well col-lg-4 col-md-4 col-sm-4"><a href="http://www.learntestcode.com">Testing123</a></p>
-		</div>
+		<section style={{textAlign: 'center', clear: 'both'}}>
+			<h3 className="well">PROJECTS</h3>
+
+			<div className="col-md-4 col-lg-4 col-sm-4">
+				<p><a href="https://thesynth.herokuapp.com">The Synth</a></p>
+				<p>Synthesize sounds right in the browser.</p>
+				<p>Static Angular app Made with Yeoman Generator</p>
+			</div>
+
+			<div className="col-lg-4 col-md-4 col-sm-4">
+				<p><a href="https://moseisleymarketplace.herokuapp.com">Mos Eisley MarketPlace</a></p>
+				<p>Ecommerce CRUD application.</p>
+				<p>RESTful API.</p>
+				<p>Made with Angular, Node, Express, Passport, Gulp, etc.</p>
+			</div>
+
+			<div className="col-lg-4 col-md-4 col-sm-4">
+				<p><a href="http://www.learntestcode.com">Testing123</a></p>
+				<p>Test-code writing training tool.</p>
+				<p>CRUD Application with RESTful API</p>
+				<p>Made with Angular, Node, Express, Passport, Gulp, etc.</p>
+			</div>
+		</section>
 	)
 }
 
 const Education = () => {
 	return (
-		<div style={{textAlign: 'center'}}>
-			<h3>EDUCATION</h3>	
-			<div className="well col-lg-3 col-md-6 col-sm-6">
+		<section style={{textAlign: 'center', clear: 'both'}}>
+
+			<h3 className="well">EDUCATION</h3>	
+
+			<div className="col-lg-3 col-md-6 col-sm-6">
 				<p>Full Stack Academy of Code: Fall '16</p>
 			</div>
-			<div className="well col-lg-3 col-md-6 col-sm-6">
+
+			<div className="col-lg-3 col-md-6 col-sm-6">
 				<p>City College: Spring '16</p>
 			</div>
 
-			<div className="well col-lg-3 col-md-6 col-sm-6">
+			<div className="col-lg-3 col-md-6 col-sm-6">
 				<p>City Tech: Fall '15</p>
 			</div>
 
-			<div className="well col-lg-3 col-md-6 col-sm-6">
+			<div className="col-lg-3 col-md-6 col-sm-6">
 				<p>NYU: Class of '09</p>
 			</div>
-		</div>
+
+		</section>
 	)
 }
 
 const Links = () => {
 	return (
-		<div style={{textAlign: 'center'}}>
+		<div style={{textAlign: 'center', clear: 'both'}}>
+			<h3 className="well">LINKS</h3>
 			<p className="col-lg-4 col-xs-12"><a href="https://www.github.com/m-cr">Github</a></p>
 			<p className="col-lg-4 col-xs-12"><a href="http://stackoverflow.com/users/7217950/m-crowley">Stack Overflow</a></p>
 			<p className="col-lg-4 col-xs-12"><a href="https://www.linkedin.com/in/miketcrowley">LinkedIn</a></p>
@@ -71,7 +93,7 @@ const Links = () => {
 
 const Footer = () => {
 	return (
-		<div style={{textAlign: 'center'}}>
+		<div style={{textAlign: 'center', clear: 'both'}}>
 			<p><a href="mailto:miketcrowley@gmail.com">Contact</a> || Skills || Projects || Education</p>
 		</div>
 	)
